@@ -28,8 +28,9 @@ client.user.setStatus("dnd")
 });
 
 
-stayinchannel=true
-// Codes +
+prefix= ff
+owner= 560434723323904002
+stayinchannel=true// Codes +
 const http = require("http");
 const express = require("express");
 const cmd = require("node-cmd");

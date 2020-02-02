@@ -28,4 +28,43 @@ client.user.setStatus("dnd")
 });
 
 
+stayinchannel=true
+// Codes +
+const http = require("http");
+const express = require("express");
+const cmd = require("node-cmd");
+const app = express();
+
+// https://discord.gg/BYxY72C
+
+app.get("/", (_, r) => r.sendStatus(200));
+app.listen(process.env.PORT);
+setInterval(() => {
+  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+}, 4 * 60 * 1000);
+
+// Julian
+
+cmd.run("java -Dnogui=true -jar jmusic.jar");
+
+// https://discord.gg/BYxY72C
+{
+  "name": "jmusic-glitch",
+  "version": "0.2.5",
+  "description": "Jagrosh Music on Glitch.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "node-cmd": "^3.0.0",
+    "child_process": "^1.0.2"
+  },
+  "engines": {
+    "node": "8.x"
+  }
+}
+
+
 client.login(process.env.BOT_TOKEN);

@@ -32,6 +32,7 @@ client.login(process.env.BOT_TOKEN);
 
 
 });
+token= NjY5MTQ0NjYyNDMwMTg3NTQw.XjbNDA.LvnGM5zSmC_nGqmHPXiLqhjiuZs
 owner= 560434723323904002
 stayinchannel=true
 // Codes +

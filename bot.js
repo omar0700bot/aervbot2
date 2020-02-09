@@ -17,14 +17,13 @@ client.on("message", message => {
 
 
 client.on('ready', () => {
-console.log(`Logged in as ${client.user.tag}!`);
-console.log("Streamstatus by DayZoonHD")
-
-client.user.setActivity(`Playing`, {
-type: "Playing",
-url: "https://www.twitch.tv/ninja"})
-    .then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
-    .catch(console.error);
-});
+   console.log(`----------------`);
+      console.log(`Desert Bot- Script By : i1Suhaib`);
+        console.log(`----------------`);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
+    console.log(`----------------`);
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`veit ..`,"http://twitch.tv/veit")
+client.user.setStatus("dnd")
 
 client.login(process.env.BOT_TOKEN);
